@@ -18,8 +18,12 @@ function App() {
         <div>
           <h1>Get started</h1>
           <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
+            Studies Computer Science at NTNU Trondheim
+	  </p>
+	  <p>
+	Website built on VTE React boilerplate
+	  </p>
+	  	
         </div>
         <button
           type="button"
@@ -37,19 +41,31 @@ function App() {
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
           </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
+          <h2>Public</h2>
+          <p>Github accounts/orgs</p>
           <ul>
             <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
+              <a href="https://github.com/sofuslind" target="_blank">
+                <svg
+                  className="button-icon"
+                  role="presentation"
+                  aria-hidden="true"
+                >
+                  <use href="/icons.svg#github-icon"></use>
+                </svg>
+                Personal github account
               </a>
             </li>
             <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
+              <a href="https://github.com/AbaCord" target="_blank">
+		<svg
+                  className="button-icon"
+                  role="presentation"
+                  aria-hidden="true"
+                >
+                  <use href="/icons.svg#github-icon"></use>
+                </svg>
+                AbaCord github - Organisation for Abakus discord server 
               </a>
             </li>
           </ul>
@@ -58,47 +74,11 @@ function App() {
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#social-icon"></use>
           </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
+          <h2>Personal</h2>
+          <p>Links to my own pages</p>
           <ul>
             <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
+              <a href="https://cloud.sofus.privatedns.org/login" target="_blank">
                 <svg
                   className="button-icon"
                   role="presentation"
@@ -106,10 +86,10 @@ function App() {
                 >
                   <use href="/icons.svg#bluesky-icon"></use>
                 </svg>
-                Bluesky
+                Cloud
               </a>
             </li>
-          </ul>
+         </ul>
         </div>
       </section>
 
