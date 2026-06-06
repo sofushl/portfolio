@@ -16,7 +16,7 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>Get started</h1>
+          <h1>Sofus Lind</h1>
           <p>
             Studies Computer Science at NTNU Trondheim
 	  </p>
@@ -53,7 +53,7 @@ function App() {
                 >
                   <use href="/icons.svg#github-icon"></use>
                 </svg>
-                Personal github account
+                Github
               </a>
             </li>
             <li>
@@ -65,7 +65,7 @@ function App() {
                 >
                   <use href="/icons.svg#github-icon"></use>
                 </svg>
-                AbaCord github - Organisation for Abakus discord server 
+                AbaCord 
               </a>
             </li>
           </ul>
