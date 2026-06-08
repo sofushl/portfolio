@@ -9,7 +9,7 @@ function App() {
     <>
       <section id="center">
         <div className="hero">
-          <img src={reactLogo} className="framework" alt="React logo" />
+          <img src={reactLogo} className="base" alt="React logo" />
         </div>
         <div>
           <h1>Sofus Lind</h1>
