@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 WIP webpage using React and TypeScript
 
