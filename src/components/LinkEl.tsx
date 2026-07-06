@@ -1,16 +1,22 @@
 type LinkElProps = {
-  text: string;
-  link: string;
+    text: string;
+    href: string;
+    className?: string;
 };
 
-function LinkEl({ text, link }: LinkElProps) {
-  return (
-    <li>
-      <a href={link} target="_blank" rel="noreferrer">
-        {text}
-      </a>
-    </li>
-  );
+export default function LinkEl({
+    text,
+    href,
+    className = "",
+}: LinkElProps) {
+    return (
+        <a
+            href={href}
+            className={`block ${className}`}
+            target="_blank"
+            rel="noreferrer"
+        >
+            {text}
+        </a>
+    );
 }
-
-export default LinkEl;

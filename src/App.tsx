@@ -6,9 +6,9 @@ export default function App() {
 
 
     const links: Record<string, string> = {
-        "Nixos configuration": "https://github.com/sofuslind/nixos",
+        "Nixos configuration": "https://github.com/sofushl/nixos",
         "Abacordium discord bot": "https://github.com/AbaCord/AbaCordium",
-        "This website": "https://github.com/sofuslind/homepage",
+        "This website": "https://github.com/sofushl/homepage",
     }
 
     return (
@@ -19,7 +19,7 @@ export default function App() {
             ]} center={[
 
             ]} right={[{
-                text: "github", href: "https://github.com/sofuslind/",
+                text: "github", href: "https://github.com/sofushl",
             }]} />
 
 
