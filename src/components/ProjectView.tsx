@@ -24,19 +24,11 @@ export default function ProjectView({ projects }: ProjectViewProps): React.React
 
                             <p>{p.description}</p>
 
-                            <div className="flex pt-4">
-                                {p.tags.map(t => (
-                                    <div key={t} className="pr-3">
-                                        <div className="text-xs rounded-full px-4 py-2 dark:bg-indigo-500 bg-blue-200 dark:text-black">
-                                            {t}
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
+
 
                         </div>
 
-                        <div className="grow" />
+                        <div className="grow p-2" />
                         <div className="flex flex-col">
                             <LinkEl
                                 href={p.link}
@@ -45,6 +37,15 @@ export default function ProjectView({ projects }: ProjectViewProps): React.React
                             />
                             <div className="grow" />
                         </div>
+                    </div>
+                    <div className="flex pt-4 overflow-auto">
+                        {p.tags.map(t => (
+                            <div key={t} className="pr-3">
+                                <div className="text-xs rounded-full px-4 py-2 dark:bg-indigo-500 bg-blue-200 dark:text-black">
+                                    {t}
+                                </div>
+                            </div>
+                        ))}
                     </div>
 
                 </div>
