@@ -1,4 +1,4 @@
-interface LinkElProps {
+export interface LinkElProps {
     text: string;
     href: string;
     className?: string;
@@ -16,15 +16,21 @@ export default function LinkEl({
     size = "3",
 }: LinkElProps) {
     return (
-        <a
-            href={href}
-            className={`block ${className} ${button ? `p-${size} rounded-lg cursor-pointer hover:bg-blue-200 bg-blue-100 dark:bg-indigo-500 dark:hover:bg-indigo-400 text-black border-black` : ""}`}
-            {...(newtab && {
-                target: "_blank", rel: "noreferrer",
-            })
-            }
-        >
-            {text}
-        </a >
+        <div className="block flex-col">
+            <div className="grow" />
+            <div className="flex-row">
+                <div className="grow" />
+                <a
+                    href={href}
+                    className={`block ${className} ${button ? `p-${size} rounded-lg cursor-pointer hover:bg-blue-200 bg-blue-100 dark:bg-indigo-500 dark:hover:bg-indigo-400 text-black border-black` : ""}`}
+                    {...(newtab && {
+                        target: "_blank", rel: "noreferrer",
+                    })
+                    }
+                >
+                    {text}
+                </a >
+            </div>
+        </div >
     );
 }

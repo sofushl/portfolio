@@ -1,28 +1,33 @@
-import LinkEl from "./LinkEl";
+import LinkEl, { type LinkElProps } from "./LinkEl";
 
-interface ListGroupProps {
-    items: { text: string, href: string, }[];
-    heading: string;
+export interface ListGroupProps {
+    items: LinkElProps[];
+    heading?: string;
+    listClass?: string;
+    className?: string;
 }
 
-export default function ListGroup({ items, heading }: ListGroupProps) {
+export default function ListGroup({ items, heading, listClass, className }: ListGroupProps) {
 
     return (
-        <>
-            <h1 className="text-2xl font-bold pb-4">{heading}</h1>
+        <div>
+            {heading ? <h4 className="font-semibold text-l pb-3">{heading}</h4> : ""}
             {items.length === 0 && <p>No items found</p>}
-            <ul className="flex flex-col">
+            <ul className={className ?? "flex flex-col"}>
                 {items.map((item) => (
-                    <div key={item.text} className="p-1" >
+                    <div key={item.text} className={`p-1 ${listClass ?? ""}`} >
                         <LinkEl
                             text={item.text}
                             href={item.href}
+                            button={item.button}
+                            newtab={item.newtab}
                         />
 
                     </div>
-                ))}
+                ))
+                }
             </ul >
-        </>
+        </div>
     );
 }
 

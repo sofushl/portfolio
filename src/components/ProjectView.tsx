@@ -20,24 +20,22 @@ export default function ProjectView({ projects }: ProjectViewProps): React.React
 
                     <div className="flex flex-row">
                         <div>
+
                             <h2 className="text-xl font-bold">{p.name}</h2>
 
-
                             <p>{p.description}</p>
-
-
 
                         </div>
 
                         <div className="grow p-2" />
-                        <div className="flex flex-col">
-                            <LinkEl
-                                href={p.link}
-                                text="GitHub"
-                            />
-                            <div className="grow" />
-                        </div>
+
+                        <LinkEl
+                            href={p.link}
+                            text="GitHub"
+                        />
+
                     </div>
+
                     <div className="flex pt-4 overflow-auto">
                         {p.tags.map(t => (
                             <div key={t} className="pr-3">

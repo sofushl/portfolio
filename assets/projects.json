@@ -1,33 +1,29 @@
 [
     {
         "name": "Nixos",
-        "description": "My nixos config",
+        "description": "My nixos config, used for development environments, desktop environments and my multi purpose server (which is hosting both this website and AbaCordium)",
         "link": "https://github.com/sofushl/nixos",
         "tags": [
             "nix",
-            "config",
-            "nixos",
-            "server"
+            "solo"
         ]
     },
     {
         "name": "AbaCordium",
-        "description": "Discord bot made in collaboration with AbaCord",
+        "description": "Discord bot made in collaboration with my student group AbaCord",
         "link": "https://github.com/AbaCord/AbaCordium",
         "tags": [
             "javascript",
-            "discord",
             "collaboration"
         ]
     },
     {
         "name": "Portfolio page",
-        "description": "Code for the website you are currently on",
+        "description": "Code for the portifolio website which you are currently on, developed with the goal of learning react and tailwind css",
         "link": "https://github.com/sofushl/homepage",
         "tags": [
             "typescript",
-            "react",
-            "web"
+            "solo"
         ]
     },
     {
@@ -36,8 +32,7 @@
         "link": "https://github.com/sofushl/MinecraftMountManager",
         "tags": [
             "java",
-            "javafx",
-            "app"
+            "solo"
         ]
     },
     {
@@ -46,7 +41,16 @@
         "link": "https://github.com/sofushl/weathercli",
         "tags": [
             "typescript",
-            "api"
+            "solo"
+        ]
+    },
+    {
+        "name": "Artifactory Fetch & Download",
+        "description": "System made at Nordic Semiconductor internship which fetches latest firmware files in Nrf Connect for Desktop applications",
+        "link": "https://github.com/nordicsemi/pc-nrfconnect-shared/tree/feat/artifactory-query-and-download-student/src/artifactory",
+        "tags": [
+            "typescript",
+            "employment"
         ]
     }
 ]
