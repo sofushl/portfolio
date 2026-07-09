@@ -8,21 +8,21 @@ export default function Home() {
     const projects: ProjectProps[] = [
         {
             name: "Nixos",
-            description: "My nixos config",
+            description: "My server and desktop config",
             link: "https://github.com/sofushl/nixos",
-            tags: ["nix", "config", "nixos", "server"],
+            tags: []
         },
         {
             name: "AbaCordium",
             description: "Discord bot made in collaboration with AbaCord",
             link: "https://github.com/AbaCord/AbaCordium",
-            tags: ["javascript", "discord", "collaboration"],
+            tags: [],
         },
         {
             name: "Portfolio page",
             description: "Code for the website you are currently on",
             link: "https://github.com/sofushl/homepage",
-            tags: ["typescript", "react", "web"],
+            tags: [],
         }
     ]
 

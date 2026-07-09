@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar.tsx';
 import Home from './pages/Home';
 import About from './pages/About';
-import Contact from './pages/Contact';
 import Projects from './pages/Projects.tsx';
 import Footer from './components/Footer.tsx';
 
@@ -17,8 +16,6 @@ export default function App() {
                     text: "Projects", href: "/projects", newtab: false,
                 }, {
                     text: "About", href: "/about", newtab: false,
-                }, {
-                    text: "Contact", href: "/contact", newtab: false,
                 }
                 ]} center={[
 
@@ -29,17 +26,16 @@ export default function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/contact" element={<Contact />} />
                 </Routes>
                 <Footer name="Sofus H. Lind"
-                    about={`Sofus Lind
+                    about={`Sofus H. Lind
 MSc Computer Science at NTNU Trondheim`}
                     lists={[
                         {
                             heading: "Connect",
                             items:
                                 [
-                                    { text: "Contact", href: "/contact", button: false, newtab: false },
+                                    { text: "Contact", href: "/about#contact", button: false, newtab: false },
                                     { text: "Github", href: "https://github.com/sofushl", button: false, newtab: true },
                                     { text: "Linkedin", href: "https://linkedin.com/sofuslind", button: false, newtab: true }
                                 ]
