@@ -2,7 +2,12 @@
     {
         "name": "Nixos",
         "description": "My nixos config, used for development environments, desktop environments and my multi purpose server (which is hosting both this website and AbaCordium)",
-        "link": "https://github.com/sofushl/nixos",
+        "buttons": [
+            {
+                "text": "GitHub",
+                "href": "https://github.com/sofushl/nixos"
+            }
+        ],
         "tags": [
             "nix",
             "solo"
@@ -11,7 +16,12 @@
     {
         "name": "AbaCordium",
         "description": "Discord bot made in collaboration with my student group AbaCord",
-        "link": "https://github.com/AbaCord/AbaCordium",
+        "buttons": [
+            {
+                "text": "GitHub",
+                "href": "https://github.com/AbaCord/AbaCordium"
+            }
+        ],
         "tags": [
             "javascript",
             "collaboration"
@@ -20,7 +30,12 @@
     {
         "name": "Portfolio page",
         "description": "Code for the portifolio website which you are currently on, developed with the goal of learning react and tailwind css",
-        "link": "https://github.com/sofushl/homepage",
+        "buttons": [
+            {
+                "text": "GitHub",
+                "href": "https://github.com/sofushl/portfolio"
+            }
+        ],
         "tags": [
             "typescript",
             "solo"
@@ -29,7 +44,12 @@
     {
         "name": "Minecraft Mount Manager",
         "description": "Javafx application for keeping track of mounts (mainly horses) in minecraft",
-        "link": "https://github.com/sofushl/MinecraftMountManager",
+        "buttons": [
+            {
+                "text": "GitHub",
+                "href": "https://github.com/sofushl/MinecraftMountManager"
+            }
+        ],
         "tags": [
             "java",
             "solo"
@@ -38,7 +58,12 @@
     {
         "name": "Weathercli",
         "description": "Command line application using openmeteo and openstreetmap api's to fetch weather reports from city name",
-        "link": "https://github.com/sofushl/weathercli",
+        "buttons": [
+            {
+                "text": "GitHub",
+                "href": "https://github.com/sofushl/weathercli"
+            }
+        ],
         "tags": [
             "typescript",
             "solo"
@@ -47,7 +72,16 @@
     {
         "name": "Artifactory Fetch & Download",
         "description": "System made at Nordic Semiconductor internship which fetches latest firmware files in Nrf Connect for Desktop applications",
-        "link": "https://github.com/nordicsemi/pc-nrfconnect-shared/tree/feat/artifactory-query-and-download-student/src/artifactory",
+        "buttons": [
+            {
+                "text": "Website",
+                "href": "https://www.nordicsemi.com/Products/Development-tools/nrf-connect-for-desktop"
+            },
+            {
+                "text": "GitHub",
+                "href": "https://github.com/nordicsemi/pc-nrfconnect-shared/tree/feat/artifactory-query-and-download-student/src/artifactory"
+            }
+        ],
         "tags": [
             "typescript",
             "employment"
