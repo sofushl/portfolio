@@ -48,12 +48,16 @@ export default function Home() {
     const experience: ItemProps[] = [
         {
             name: "Nordic Semiconductors",
-            description: "Summer internship softwaretools frontend 2026",
+            description: "Summer intern 2026 — frontend software developer",
             buttons: [{ text: "Website", href: "https://www.nordicsemi.com/About-us", }]
         }, {
-            name: "Teknologiskolen SDU Summer Camp",
-            description: "Assistant instructor 2024 & 2025",
+            name: "Teknologiskolen Robot Camp, SDU",
+            description: "Assistant instructor 2024, 2025 — taught kids programming with Raspberry Pi Pico and MicroPython",
             buttons: [{ text: "Website", href: "https://www.teknologiskolen.dk/", }]
+        }, {
+            name: "Bølgeløypa Skolelaboratoriet, NTNU",
+            description: "Instructor January 2026 — taught wave physics to high school students through hands-on lab activities",
+            buttons: [{ text: "Website", href: "https://www.ntnu.no/skolelab/bolgeloypa", }]
         }
     ]
 
@@ -71,14 +75,14 @@ export default function Home() {
                 <GridView items={projects} />
             </div>
             <div className='flex-1'>
-                <div className='flex pb-4 px-10 flex-row'>
+                <div className='flex pb-4 px-10 flex-wrap'>
                     <div className='flex-1'>
                         <h1 className="text-2xl font-bold">Skills</h1>
-                        <GridView items={skills} padding='py-2 pr-10' gridCols='lg:grid-cols-2' />
+                        <GridView items={skills} padding='py-2 pr-10' gridCols='min-[1150px]:grid-cols-2' />
                     </div>
                     <div className='flex-1'>
                         <h1 className="text-2xl font-bold">Experience</h1>
-                        <GridView items={experience} padding='py-2' gridCols='lg:grid-cols-2' />
+                        <GridView items={experience} padding='py-2' gridCols='min-[1300px]:grid-cols-2' />
                     </div>
                 </div>
             </div>
