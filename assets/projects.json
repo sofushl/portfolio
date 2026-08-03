@@ -42,6 +42,20 @@
         ]
     },
     {
+        "name": "Email backend",
+        "description": "Api backend to make submitted forms on this website actually arrive in my inbox, developed mostly with the goal of learning rust",
+        "buttons": [
+            {
+                "text": "GitHub",
+                "href": "https://github.com/sofushl/email-backend"
+            }
+        ],
+        "tags": [
+            "rust",
+            "solo"
+        ]
+    },
+    {
         "name": "Minecraft Mount Manager",
         "description": "Javafx application for keeping track of mounts (mainly horses) in minecraft",
         "buttons": [
