@@ -15,8 +15,8 @@ export default function About() {
                     <h2 className="text-xl font-bold" id='skills'>Skills</h2>
                 </div>
                 <div>
-                    <ContactForm />
-                    Or use my public email:
+                    <ContactForm url="/email" />
+                    Or use my public email directly:
                     <LinkEl text="sofushl@proton.me" href='mailto:sofushl.proton.me' newtab={true} button={false} />
                 </div>
             </div>

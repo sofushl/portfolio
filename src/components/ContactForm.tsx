@@ -3,7 +3,11 @@ import Button from '../components/Button';
 
 type Status = 'typing' | 'submitting' | 'success';
 
-export default function ContactForm() {
+interface ContactFormProps {
+    url: string;
+}
+
+export default function ContactForm({ url }: ContactFormProps) {
     const [email, setEmail] = useState<string>('');
     const [message, setMessage] = useState<string>('');
     const [error, setError] = useState<Error | null>(null);
@@ -15,7 +19,7 @@ export default function ContactForm() {
         e.preventDefault();
         setStatus('submitting');
         try {
-            await submitForm(email, message);
+            await submitForm(email, message, url);
             setStatus('success');
         } catch (err) {
             setStatus('typing');
@@ -84,19 +88,20 @@ export default function ContactForm() {
     );
 }
 
-async function submitForm(email: string, message: string): Promise<void> {
+async function submitForm(email: string, message: string, url: string): Promise<void> {
     if (!isValidEmail(email)) {
         throw new Error("Invalid email");
     }
 
-    const response = await fetch("/api/contact", {
+    const response = await fetch(url, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            email,
-            message,
+            "email": email,
+            "subject": `Automatic message from ${email}`,
+            "message": message,
         }),
     });
 
