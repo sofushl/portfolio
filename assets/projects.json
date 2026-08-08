@@ -56,6 +56,34 @@
         ]
     },
     {
+        "name": "Lights UI",
+        "description": "Web UI for changing colours of rgb led light triangles over wifi, developed with rust and leptos",
+        "buttons": [
+            {
+                "text": "GitHub",
+                "href": "https://github.com/sofushl/lightsUI"
+            }
+        ],
+        "tags": [
+            "rust",
+            "solo"
+        ]
+    },
+    {
+        "name": "RGB Triangles",
+        "description": "Continued development of rgb light triangles powered by rapberry pi pico and micropython, originally made on Robot Summer Camp Teknologiskolen SDU in 2023",
+        "buttons": [
+            {
+                "text": "GitHub",
+                "href": "https://github.com/sofushl/rgbTriangles"
+            }
+        ],
+        "tags": [
+            "python",
+            "solo"
+        ]
+    },
+    {
         "name": "Minecraft Mount Manager",
         "description": "Javafx application for keeping track of mounts (mainly horses) in minecraft",
         "buttons": [
