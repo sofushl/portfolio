@@ -29,7 +29,7 @@ export default function App() {
                 </Routes>
                 <Footer name="Sofus H. Lind"
                     about={`Sofus H. Lind
-MSc Computer Science at NTNU Trondheim`}
+MSc Computer Science, NTNU Trondheim`}
                     lists={[
                         {
                             heading: "Connect",

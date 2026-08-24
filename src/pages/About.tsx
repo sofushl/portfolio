@@ -8,7 +8,7 @@ export default function About() {
         <>
             <Hero
                 name="About me"
-                tagline='Sofus H. Lind - MSc Computer Science at NTNU Trondheim'
+                tagline='Sofus Højberg Lind - MSc Computer Science, NTNU Trondheim'
             />
             <div className='px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
                 <div>

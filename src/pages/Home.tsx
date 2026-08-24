@@ -48,7 +48,7 @@ export default function Home() {
     const experience: ItemProps[] = [
         {
             name: "Nordic Semiconductors",
-            description: "Summer intern 2026 — frontend software developer",
+            description: "Frontend developer intern, Jun–Aug 2026; part-time since — building cloud-driven firmware and configuration delivery tools for nRF Connect for desktop",
             buttons: [{ text: "Website", href: "https://www.nordicsemi.com/About-us", }]
         }, {
             name: "Teknologiskolen Robot Camp, SDU",
