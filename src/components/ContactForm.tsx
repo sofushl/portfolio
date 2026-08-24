@@ -56,6 +56,7 @@ export default function ContactForm({ url }: ContactFormProps) {
                     onChange={handleInputChange}
                     disabled={status === 'submitting'}
                     className='bg-indigo-200 text-black'
+                    placeholder='email@example.com'
                 />
 
                 <textarea
@@ -63,6 +64,7 @@ export default function ContactForm({ url }: ContactFormProps) {
                     onChange={handleTextAreaChange}
                     disabled={status === 'submitting'}
                     className='bg-indigo-200 text-black'
+                    placeholder='your message'
                 />
 
                 <div className='flex flex-row'  >
