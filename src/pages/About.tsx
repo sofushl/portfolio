@@ -17,7 +17,7 @@ export default function About() {
                     <h2 className="text-xl font-bold" id='skills'>Skills</h2>
                     <GridView items={skillsList} padding='py-2 pr-10' gridCols='min-[1150px]:grid-cols-2' />
                 </div>
-                <div className='flex flex-col'>
+                <div className='pr-10 flex flex-col'>
                     <ContactForm url="/email" />
                     <div className='p-10' />
                     <div className='flex '>

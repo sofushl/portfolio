@@ -52,24 +52,24 @@ export default function ContactForm({ url }: ContactFormProps) {
             <form className='flex flex-col gap-5 py-5' onSubmit={(e) => { void handleSubmit(e); }}>
                 <div className='flex flex-row grow w-full'>
 
-                    <div className='bg-indigo-400 rounded-l-xl p-3' />
+                    <div className='bg-indigo-400 rounded-l-lg p-3' />
                     <input
                         value={email}
                         onChange={handleInputChange}
                         disabled={status === 'submitting'}
-                        className='w-full p-1 rounded-r-xl bg-indigo-200 text-black'
+                        className='w-full p-1 rounded-r-lg bg-indigo-200 text-black'
                         placeholder='email@example.com'
                     />
                 </div>
                 <div className='flex flex-row grow w-full'>
 
-                    <div className='bg-indigo-400 rounded-l-xl p-3' />
+                    <div className='bg-indigo-400 rounded-l-lg p-3' />
 
                     <textarea
                         value={message}
                         onChange={handleTextAreaChange}
                         disabled={status === 'submitting'}
-                        className='w-full p-2 rounded-r-xl  bg-indigo-200 text-black'
+                        className='w-full p-2 rounded-r-lg  bg-indigo-200 text-black'
                         placeholder='your message'
                     />
                 </div>
