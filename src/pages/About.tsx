@@ -14,10 +14,13 @@ export default function About() {
                 <div>
                     <h2 className="text-xl font-bold" id='skills'>Skills</h2>
                 </div>
-                <div>
+                <div className='flex flex-col'>
                     <ContactForm url="/email" />
-                    Or use my public email directly:
-                    <LinkEl text="sofushl@proton.me" href='mailto:sofushl.proton.me' newtab={true} button={false} />
+                    <div className='p-10' />
+                    <div className='flex '>
+                        <LinkEl text="Email directly" href='mailto:sofushl.proton.me' newtab={true} button={true} />
+                        <div />
+                    </div>
                 </div>
             </div>
         </>
