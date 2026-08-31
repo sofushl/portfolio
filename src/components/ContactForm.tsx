@@ -50,22 +50,29 @@ export default function ContactForm({ url }: ContactFormProps) {
         <div>
             <h2 className="text-xl font-bold" id='contact'>Contact me</h2>
             <form className='flex flex-col gap-5 py-5' onSubmit={(e) => { void handleSubmit(e); }}>
+                <div className='flex flex-row grow w-full'>
 
-                <input
-                    value={email}
-                    onChange={handleInputChange}
-                    disabled={status === 'submitting'}
-                    className='bg-indigo-200 text-black'
-                    placeholder='email@example.com'
-                />
+                    <div className='bg-indigo-400 rounded-l-xl p-3 font-extrabold tex'> @ </div>
+                    <input
+                        value={email}
+                        onChange={handleInputChange}
+                        disabled={status === 'submitting'}
+                        className='w-full p-1 rounded-r-xl bg-indigo-200 text-black'
+                        placeholder='email@example.com'
+                    />
+                </div>
+                <div className='flex flex-row grow w-full'>
 
-                <textarea
-                    value={message}
-                    onChange={handleTextAreaChange}
-                    disabled={status === 'submitting'}
-                    className='bg-indigo-200 text-black'
-                    placeholder='your message'
-                />
+                    <div className='bg-indigo-400 rounded-l-xl p-3' />
+
+                    <textarea
+                        value={message}
+                        onChange={handleTextAreaChange}
+                        disabled={status === 'submitting'}
+                        className='w-full p-2 rounded-r-xl  bg-indigo-200 text-black'
+                        placeholder='your message'
+                    />
+                </div>
 
                 <div className='flex flex-row'  >
                     <Button
