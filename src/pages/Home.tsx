@@ -9,17 +9,17 @@ const featuredProjects: ItemProps[] = [
     {
         name: "Nixos",
         description: "My server and desktop config",
-        buttons: [{ text: "Github", href: "https://github.com/sofushl/homepage", }],
+        buttons: [{ text: "Github", href: "https://github.com/sofushl/nixos", }],
     },
     {
         name: "AbaCordium",
-        description: "Discord bot made in collaboration with AbaCord",
-        buttons: [{ text: "Github", href: "https://github.com/sofushl/homepage", }],
+        description: "Collaborative discord bot project",
+        buttons: [{ text: "Github", href: "https://github.com/abacord/abacordium", }],
     },
     {
         name: "Portfolio page",
-        description: "Code for the website you are currently on",
-        buttons: [{ text: "Github", href: "https://github.com/sofushl/homepage", }],
+        description: "Source code for this website",
+        buttons: [{ text: "Github", href: "https://github.com/sofushl/portfolio", }],
     }
 ]
 export default function Home() {
