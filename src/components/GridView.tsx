@@ -4,7 +4,7 @@ export interface ItemProps {
     name: string;
     description?: string;
     tags?: string[];
-    buttons?: { text: string; href: string; }[];
+    buttons?: { text: string; href: string; newtab?: boolean }[];
     rank?: number;
 }
 

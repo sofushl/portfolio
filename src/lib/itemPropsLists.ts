@@ -3,35 +3,35 @@ import { type ItemProps } from "../components/GridView.tsx";
 export const skillsList: ItemProps[] = [
   {
     name: "Typescript",
-    buttons: [{ text: "Projects", href: "/projects?filter=typescript" }],
+    buttons: [{ text: "Projects", href: "/projects?filter=typescript", newtab: false }],
   },
   {
     name: "Java",
-    buttons: [{ text: "Projects", href: "/projects?filter=java" }],
+    buttons: [{ text: "Projects", href: "/projects?filter=java", newtab: false }],
   },
   {
     name: "Nix",
-    buttons: [{ text: "Projects", href: "/projects?filter=nix" }],
+    buttons: [{ text: "Projects", href: "/projects?filter=nix", newtab: false }],
   },
   {
     name: "Javascript",
-    buttons: [{ text: "Projects", href: "/projects?filter=javascript" }],
+    buttons: [{ text: "Projects", href: "/projects?filter=javascript", newtab: false }],
   },
   {
     name: "Rust",
-    buttons: [{ text: "Projects", href: "/projects?filter=rust" }],
+    buttons: [{ text: "Projects", href: "/projects?filter=rust", newtab: false }],
   },
   {
     name: "Python",
-    buttons: [{ text: "Projects", href: "/projects?filter=python" }],
+    buttons: [{ text: "Projects", href: "/projects?filter=python", newtab: false }],
   },
   {
     name: "C",
-    buttons: [{ text: "Projects", href: "/projects?filter=c" }],
+    buttons: [{ text: "Projects", href: "/projects?filter=c", newtab: false }],
   },
   {
     name: "Go",
-    buttons: [{ text: "Projects", href: "/projects?filter=go" }],
+    buttons: [{ text: "Projects", href: "/projects?filter=go", newtab: false }],
   },
 ];
 
