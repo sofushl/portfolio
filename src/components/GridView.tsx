@@ -5,6 +5,7 @@ export interface ItemProps {
     description?: string;
     tags?: string[];
     buttons?: { text: string; href: string; }[];
+    rank?: number;
 }
 
 interface GridViewProps {
@@ -18,7 +19,7 @@ export default function GridView({ items, gridCols = "grid-cols-1 md:grid-cols-2
 
         <div className={`grid ${gridCols} gap-6 ${padding}`} >
             {
-                items.map(i => (
+                items.sort((a, b) => (b.rank ?? 0) - (a.rank ?? 0)).map(i => (
                     <div key={i.name} className="rounded-lg p-6 shadow-2xl dark:shadow-gray-900 bg-indigo-50 dark:bg-indigo-950">
 
                         <div className="flex flex-row">

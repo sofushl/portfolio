@@ -25,6 +25,14 @@ export const skillsList: ItemProps[] = [
     name: "Python",
     buttons: [{ text: "Projects", href: "/projects?filter=python" }],
   },
+  {
+    name: "C",
+    buttons: [{ text: "Projects", href: "/projects?filter=c" }],
+  },
+  {
+    name: "Go",
+    buttons: [{ text: "Projects", href: "/projects?filter=go" }],
+  },
 ];
 
 export const experienceList: ItemProps[] = [
@@ -44,8 +52,6 @@ export const experienceList: ItemProps[] = [
     name: "Bølgeløypa Skolelaboratoriet, NTNU",
     description:
       "Instructor January 2026 — taught wave physics to high school students through hands-on lab activities",
-    buttons: [
-      { text: "Website", href: "https://www.ntnu.no/skolelab/bolgeloypa" },
-    ],
+    buttons: [{ text: "Website", href: "https://www.ntnu.no/skolelab/bolgeloypa" }],
   },
 ];

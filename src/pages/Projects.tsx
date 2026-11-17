@@ -1,6 +1,7 @@
 import GridView, { type ItemProps } from '../components/GridView.tsx';
 import Hero from '../components/Hero.tsx';
-import projectsData from "../../assets/projects.json";
+import staticProjectsData from "../../assets/projects.json";
+import genProjectsData from "../../assets/generated/projects.json";
 import { useState } from 'react';
 import Dropdown from '../components/Dropdown.tsx';
 import { useSearchParams } from 'react-router-dom';
@@ -13,7 +14,8 @@ export default function Projects() {
         searchParams.get("filter")
     )
 
-    const projects: Required<ItemProps>[] = projectsData;
+    const projects: Required<ItemProps>[] =
+        genProjectsData.concat(staticProjectsData);
     const seen = new Map<string, number>();
 
     projects.flatMap(p => p.tags).forEach(tag => {

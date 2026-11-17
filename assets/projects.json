@@ -1,21 +1,7 @@
 [
     {
-        "name": "Nixos",
-        "description": "My nixos config, used for development environments, desktop environments and my multi purpose server (which is hosting both this website and AbaCordium)",
-        "buttons": [
-            {
-                "text": "GitHub",
-                "href": "https://github.com/sofushl/nixos"
-            }
-        ],
-        "tags": [
-            "nix",
-            "solo"
-        ]
-    },
-    {
         "name": "AbaCordium",
-        "description": "Discord bot made in collaboration with my student group AbaCord",
+        "description": "Discord bot developed in collaboration with my friend group at Computer Science studies",
         "buttons": [
             {
                 "text": "GitHub",
@@ -24,96 +10,13 @@
         ],
         "tags": [
             "javascript",
-            "collaboration"
-        ]
-    },
-    {
-        "name": "Portfolio page",
-        "description": "Code for the portifolio website which you are currently on, developed with the goal of learning react and tailwind css",
-        "buttons": [
-            {
-                "text": "GitHub",
-                "href": "https://github.com/sofushl/portfolio"
-            }
+            "collaborative"
         ],
-        "tags": [
-            "typescript",
-            "solo"
-        ]
+        "rank": 100
     },
     {
-        "name": "Email backend",
-        "description": "Api backend to make submitted forms on this website actually arrive in my inbox, developed mostly with the goal of learning rust",
-        "buttons": [
-            {
-                "text": "GitHub",
-                "href": "https://github.com/sofushl/email-backend"
-            }
-        ],
-        "tags": [
-            "rust",
-            "solo"
-        ]
-    },
-    {
-        "name": "Lights UI",
-        "description": "Web UI for changing colours of rgb led light triangles over wifi, developed with rust and leptos",
-        "buttons": [
-            {
-                "text": "GitHub",
-                "href": "https://github.com/sofushl/lightsUI"
-            }
-        ],
-        "tags": [
-            "rust",
-            "solo"
-        ]
-    },
-    {
-        "name": "RGB Triangles",
-        "description": "Continued development of rgb light triangles powered by rapberry pi pico and micropython, originally made on Robot Summer Camp Teknologiskolen SDU in 2023",
-        "buttons": [
-            {
-                "text": "GitHub",
-                "href": "https://github.com/sofushl/rgbTriangles"
-            }
-        ],
-        "tags": [
-            "python",
-            "solo"
-        ]
-    },
-    {
-        "name": "Minecraft Mount Manager",
-        "description": "Javafx application for keeping track of mounts (mainly horses) in minecraft",
-        "buttons": [
-            {
-                "text": "GitHub",
-                "href": "https://github.com/sofushl/MinecraftMountManager"
-            }
-        ],
-        "tags": [
-            "java",
-            "solo"
-        ]
-    },
-    {
-        "name": "Weathercli",
-        "description": "Command line application using openmeteo and openstreetmap api's to fetch weather reports from city name",
-        "buttons": [
-            {
-                "text": "GitHub",
-                "href": "https://github.com/sofushl/weathercli"
-            }
-        ],
-        "tags": [
-            "typescript",
-            "solo"
-        ]
-    },
-    {
-        "name": "Artifactory Fetch & Download",
-        "description": "System made at Nordic Semiconductor internship which fetches latest firmware files in Nrf Connect for Desktop applications",
+        "name": "Artifactory Firmware client",
+        "description": "System built during Nordic Semiconductor internship, which queries and downloads firmware ",
         "buttons": [
             {
                 "text": "Website",
@@ -126,7 +29,8 @@
         ],
         "tags": [
             "typescript",
-            "employment"
-        ]
+            "nordicsemiconductor"
+        ],
+        "rank": 10
     }
 ]
